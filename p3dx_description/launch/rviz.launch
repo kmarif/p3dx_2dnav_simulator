@@ -6,10 +6,10 @@
   
   <!--RVIZ settings-->
   <param name="robot_description"
-		command="$(find xacro)/xacro.py '$(find p3dx_description)/urdf/pioneer3dx.xacro'" />
+		command="$(find xacro)/xacro '$(find p3dx_description)/urdf/pioneer3dx.xacro'" />
   <node name="rviz" pkg="rviz" type="rviz" args="$(arg rviz_node_args)" />
 
   <!--state publishers are moved to p3dx_2dnav.launch-->
   <!--node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" /-->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /-->
 </launch>
