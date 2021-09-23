@@ -31,7 +31,7 @@
   </include>
 
   <!-- Load the URDF into the ROS Parameter Server -->
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find p3dx_description)/urdf/pioneer3dx.xacro' contact:=$(arg contact) laser_noise:=$(arg laser_noise) odom_source:=$(arg odom_source) base_frame:=$(arg base_frame) map_frame:=$(arg map_frame) world_frame:=$(arg world_frame) odometry_frame:=$(arg odometry_frame) laser_frame:=$(arg laser_frame)" />
+  <param name="robot_description" command="$(find xacro)/xacro '$(find p3dx_description)/urdf/pioneer3dx.xacro' contact:=$(arg contact) laser_noise:=$(arg laser_noise) odom_source:=$(arg odom_source) base_frame:=$(arg base_frame) map_frame:=$(arg map_frame) world_frame:=$(arg world_frame) odometry_frame:=$(arg odometry_frame) laser_frame:=$(arg laser_frame)" />
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model p3dx -param robot_description -x $(arg init_x) -y $(arg init_y) -Y $(arg init_a)" />
