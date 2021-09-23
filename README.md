@@ -39,8 +39,8 @@ $ roslaunch p3dx_lin_vel_pid p3dx_2dnav_pid.launch ip_x:=-4 ip_y:=-4 ip_a:=3.141
 ![alt text]( https://raw.githubusercontent.com/chungying/p3dx_2dnav_simulator/master/docs/rqt_plot_monitor.png )
 ### Test Environment
 
- * Ubuntu 14.04
- * ROS Indigo
+ * Ubuntu 20.04
+ * ROS Noetic
 
 ### Stuff used to make this:
 
