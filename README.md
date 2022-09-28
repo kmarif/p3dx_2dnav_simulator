@@ -6,7 +6,7 @@ This repository simulate a p3dx mobile robot in willowgarage.world of Gazebo wit
 
 ```
 $ cd <catkin_ws>/src
-$ git clone https://github.com/chungying/p3dx_2dnav_simulator.git
+$ git clone https://github.com/kmarif/p3dx_2dnav_simulator.git
 $ cd ..
 $ catkin_make
 ```
